@@ -66,9 +66,6 @@ public class Order {
 		this.description = description;
 	}
 	
-	public Order() {
-		super();
-	}
 	
 	@Override
 	public String toString() {
