@@ -56,7 +56,20 @@ public class Order {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
+	
+	public Order(double price, String currency, String method, String intent, String description) {
+		super();
+		this.price = price;
+		this.currency = currency;
+		this.method = method;
+		this.intent = intent;
+		this.description = description;
+	}
+	
+	public Order() {
+		super();
+	}
+	
 	@Override
 	public String toString() {
 		return "Order [price=" + price + ", currency=" + currency + ", method=" + method + ", intent=" + intent
