@@ -1,13 +1,9 @@
 package com.essentials.demo.models.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 @ToString
 public class Order {
 	
@@ -66,6 +62,9 @@ public class Order {
 		this.description = description;
 	}
 	
+	public Order() {
+		super();
+	}
 	
 	@Override
 	public String toString() {
