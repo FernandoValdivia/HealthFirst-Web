@@ -15040,7 +15040,7 @@ header .main-nav .current-menu-item > a {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background-color: transparent;
+  background-color: #ccc5;
   border-radius: 7px;
   -webkit-transition-property: color;
   transition-property: color;
