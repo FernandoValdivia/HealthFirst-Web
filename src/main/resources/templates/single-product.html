@@ -68,10 +68,10 @@
             <div class="container">
             	<div>
             		<a class="logo" th:href="@{/private/index}" th:if="${session.usuarios != null}">
-                		<img src="https://res.cloudinary.com/health-first/image/upload/v1656470263/Logos/logo-hf-l_bcicfy.png" class="image-logo" alt="Logo CovidEssentials" />
+                		<img src="https://res.cloudinary.com/health-first/image/upload/v1656470263/Logos/logo-hf-l_bcicfy.png" class="image-logo" alt="Logo Health First" />
             		</a>
 	                <a class="logo" th:href="@{/public/index}" th:if="${session.usuarios == null}">
-                		<img src="https://res.cloudinary.com/health-first/image/upload/v1656470263/Logos/logo-hf-l_bcicfy.png" class="image-logo" alt="Logo CovidEssentials" />
+                		<img src="https://res.cloudinary.com/health-first/image/upload/v1656470263/Logos/logo-hf-l_bcicfy.png" class="image-logo" alt="Logo Health First" />
             		</a>
             	</div>
                 <!-- /.top-cart -->
@@ -145,7 +145,7 @@
         </header>
         <input id="id_precio" step="any" type="hidden" th:value="${producto.precio_producto}">
         
-		<a th:href="@{/auth/login}" th:if="${session.usuarios == null}">
+		<a th:href="@{/auth/login}" th:if="${session.usuarios == null}" class="favorite-a">
 			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
             	<path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
             </svg>
@@ -215,7 +215,7 @@
 			<input id="precio_producto_f" type="hidden" th:field="*{precio_producto_favorito}">
 			<input id="imagen_producto_f" type="hidden" th:field="*{imagen_producto_favorito}">
 			<br>
-			<button type="submit">
+			<button type="submit" class="favorite-btn">
 				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="25" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
                 	<path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
                 </svg>

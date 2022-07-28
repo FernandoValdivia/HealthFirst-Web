@@ -20057,3 +20057,41 @@ span.price {
   float: right;
   color: grey;
 }
+
+/* favorite */
+.favorite-btn {
+	z-index: 100;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-color: white;
+	color: red;
+	position: absolute;
+	top: 45%;
+	left: 75%;
+	padding-top: .5rem;
+	box-shadow: 0px 0px 2px 2px grey;
+}
+
+.favorite-btn:hover, .favorite-a:hover {
+	background-color: #fcdcdc;
+	color: #000;
+}
+
+.favorite-a {
+	z-index: 100;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-color: white;
+	color: red;
+	position: absolute;
+	top: 45%;
+	left: 75%;
+	box-shadow: 0px 0px 2px 2px grey;
+}
